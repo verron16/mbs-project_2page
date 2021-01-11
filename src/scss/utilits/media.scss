@@ -77,11 +77,31 @@
     }
 }
 
+@media screen and (max-width: 1584px) {
+.top-bar-info {
+    &::after {
+        width: 560px;
+        max-width: 560px;
+        background-size: (560px 560px);
+        top: 74px;
+    }
+}
+}
+
 @media screen and (max-width: 1376px) {
     .achive-item {
         width: 80%;
     }
 }
+
+@media screen and (max-width: 1300px) {
+    .top-bar-info {
+        &::after {
+            background: none;
+        }
+    } 
+}
+
 
 @media screen and (max-width: 1271px) and (min-width: 869px) {
 
@@ -393,6 +413,12 @@
     }
 }
 @media screen and (max-width: 468px) {
+    br {
+        display: none;
+    }
+    .top-bar {
+        background-position: 9% 50%;
+    }
     .btn-back-hidden {
         display: block;
     }

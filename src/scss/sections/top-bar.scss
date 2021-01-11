@@ -13,22 +13,34 @@
     height: 840px;
     overflow: hidden;
     &-block {
-        display: grid;
         z-index: 5;
-        grid-template-columns: 1fr 1.35fr;
+        position: relative;
     }
-    &-preview {
-        width: 100%;
-        height: auto;
-        z-index: 5;
-        margin-left: 140px;
-    }
+    // &-preview {
+    //     height: auto;
+    //     z-index: 5;
+    //     max-width: 100%;
+    //     max-width: 760px;
+    // }
     &-info {
         z-index: 5;
         position: relative;
         margin-top: 130px;
-        max-width: 745px;
-        margin-left: auto;
+        max-width: 685px;
+        position: relative;
+        &::after {
+            content: '';
+            background: url('../img/header-banner-pic.png') no-repeat;
+            position: absolute;
+            background-size: (760px 760px);
+            right: 0;
+            left: 720px;
+            top: -120px;
+            height: 760px;
+            z-index: 7;
+            width: 760px;
+            
+        }
         &-btnsm {
             display: none;
         }
