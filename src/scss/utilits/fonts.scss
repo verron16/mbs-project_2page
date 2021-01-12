@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Gothic';
+    src: url('./../CenturyGothic-Bold.woff2') format('woff2'),
+        url('./../fonts/CenturyGothic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('./../fonts/Gogh-ExtraBold.woff2') format('woff2'),
+        url('./../fonts/Gogh-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gothic';
+    src: url('./../fonts/CenturyGothic.woff2') format('woff2'),
+        url('./../fonts/CenturyGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

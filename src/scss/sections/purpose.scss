@@ -1,0 +1,59 @@
+.purpose {
+    background-color: #181818;
+    padding: 140px 0;
+
+    &-block {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &-item {
+        &-title {
+            color: white;
+            font-family: $secondFont;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 120%;
+            padding-bottom: 20px;
+        }
+
+        &-description {
+            color: white;
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 150%;
+        }
+
+        &-element {
+            color: white;
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 26px;
+            line-height: 150%;
+        }
+    }
+
+    &-item:nth-child(2) {
+        padding-left: 150px;
+    }
+
+    &-item:nth-child(1) {
+        position: relative;
+        max-width: 520px;
+
+        &::before {
+            content: url('../img/crosshair.svg');
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            top: -115px;
+            right: 0;
+            left: 0;
+
+        }
+    }
+}

@@ -1,0 +1,211 @@
+.hidden-item {
+    display: none;
+}
+
+.btn-back-hidden {
+    display: none;
+}
+
+.result {
+    padding: 100px 100px;
+    background-color: #181818;
+
+    &-title {
+        font-family: $secondFont;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 120%;
+        color: white;
+        margin-top: 140px;
+        padding-bottom: 70px;
+        padding-left: 28px;
+    }
+
+    &-block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            column-gap: 200px;
+        }
+
+        &-item {
+            position: relative;
+            padding-left: 65px;
+        }
+
+        &-anim {
+            & img {
+                width: 100%;
+                height: auto;
+                max-width: 288px;
+                animation-name: rotation;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+        }
+    }
+
+    &-item {
+        &-title {
+            font-family: $secondFont;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 120%;
+            color: white;
+            padding-bottom: 30px;
+
+            &::before {
+                content: '03';
+                position: absolute;
+                top: -70px;
+                right: 0;
+                left: 57px;
+                font-family: $secondFont;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 200px;
+                line-height: 120%;
+                opacity: 0.3;
+            }
+        }
+
+        &-description {
+            color: white;
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 26px;
+            line-height: 150%;
+            padding-bottom: 50px;
+        }
+    }
+}
+
+.achive {
+    &-block {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &-sub {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &-btn {
+        text-align: center;
+        padding-top: 70px;
+
+        & button {
+            background: transparent;
+            width: 210px;
+            height: 57px;
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 100%;
+            color: white;
+            border: 1px solid white;
+            cursor: pointer;
+            outline: none;
+
+            &:hover {
+                background: #979797;
+                border: none;
+            }
+        }
+    }
+
+    &-item {
+        color: white;
+        position: relative;
+        margin: 30px 20px;
+        width: 540px;
+        text-align: left;
+        &-description {
+            color: white;
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 26px;
+            line-height: 150%;
+            padding-left: 30px;
+            position: relative;
+
+            &::before {
+                content: '';
+                background-color: #F91616;
+                width: 8px;
+                height: 100%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                left: 0;
+            }
+        }
+        &-boxes {
+            display: flex;
+            flex-direction: row;
+            padding-top: 30px;
+        }
+        &-line {
+            width: 490px;
+            height: 20px;
+            display: flex;
+            padding-top: 30px;
+            &-white {
+                width: 223px;
+                background: white;
+            }
+            &-red {
+                width: 267px;
+                background: #F91616;
+            }
+            &-mod {
+                width: 536px;
+                height: 20px;
+                display: flex;
+                padding-top: 30px;
+                &-white {
+                    background: white;
+                    width: 244px;
+                }
+                &-red {
+                    width: 292px;
+                    background: #F91616;
+                }
+            }
+        }
+    }
+}
+
+.item-boxes-element {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    margin-right: 10px;
+    &-mod {
+        background-color: #F91616;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}

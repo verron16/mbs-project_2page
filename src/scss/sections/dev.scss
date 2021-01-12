@@ -1,0 +1,78 @@
+.dev {
+    padding: 100px 0 0 0;
+    background: #181818;
+    &-block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &-item {
+            position: relative;
+            padding-left: 251.500px;
+            max-width: 460px;
+            color: white;
+        }
+
+        & img {
+            width: 100%;
+            height: auto;
+            max-width: 1040px;
+        }
+    }
+
+    &-item {
+        &-title {
+            font-family: $secondFont;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 120%;
+            padding-bottom: 30px;
+
+            &::before {
+                content: '01';
+                position: absolute;
+                top: -165px;
+                right: 0;
+                left: 240px;
+                font-size: 40px;
+                font-family: $secondFont;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 200px;
+                line-height: 120%;
+                opacity: 0.1;
+            }
+        }
+
+        &-description {
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 26px;
+            line-height: 150%;
+            padding-bottom: 50px;
+        }
+
+        &-link {
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 100%;
+            position: relative;
+            color: white;
+            &::after {
+                content: url('../img/small-arrow.svg');
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 1px;
+                right: 0;
+                left: 150px;
+                z-index: 200;
+            }
+        }
+    }
+}
